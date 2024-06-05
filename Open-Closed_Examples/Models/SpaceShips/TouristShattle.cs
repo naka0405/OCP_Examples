@@ -16,6 +16,11 @@ namespace Open_Closed_Examples.Models.SpaceShips
 
         public bool IsValid { get ; set ; }
 
+        public void Run()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string ToString()
         {
             return $"I am {nameof(TouristShattle)} - \'{Identifier}\'.";

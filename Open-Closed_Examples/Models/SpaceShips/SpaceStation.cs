@@ -2,7 +2,7 @@
 
 namespace Open_Closed_Examples.Models.SpaceShips
 {
-    internal class SpaceStation : ISpaceMachine
+    internal class SpaceStation : SpaceShipSystemBase, ISpaceMachine
     {
         private string description = $"Some {nameof(SpaceStation)} description.";
         public SpaceStation(string id)
@@ -13,6 +13,11 @@ namespace Open_Closed_Examples.Models.SpaceShips
         public string Identifier { get; set; }
 
         public string Description => description;
+
+        public void Run()
+        {
+            throw new NotImplementedException();
+        }
 
         public override string ToString()
         {

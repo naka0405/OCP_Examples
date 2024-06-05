@@ -19,5 +19,14 @@ namespace Open_Closed_Examples
         {
             spaceMachines.Add(machine);
         }
+
+        public void Process(ISpaceMachine machine)
+        {
+            foreach (var spaceMachine in spaceMachines)
+            {
+                spaceMachine.Run();
+            }
+
+        }
     }
 }

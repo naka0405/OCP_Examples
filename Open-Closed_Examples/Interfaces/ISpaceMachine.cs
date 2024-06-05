@@ -3,6 +3,7 @@
     public interface ISpaceMachine
     {
         string Identifier { get; }
-        string Description { get; }        
+        string Description { get; }
+        void Run();
     }
 }

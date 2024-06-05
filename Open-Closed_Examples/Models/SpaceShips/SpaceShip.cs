@@ -9,6 +9,7 @@ namespace Open_Closed_Examples.Models.SpaceShips
         {
             SerialNumber = serialNumber;
         }
+
         public string SerialNumber { get; set; }
         public Crew? Crew { get; set; }
         public IMultiEngineService? EngineService { get; set; }
@@ -18,7 +19,7 @@ namespace Open_Closed_Examples.Models.SpaceShips
             EngineService = engineService;
         }
 
-        internal void LetGo()
+        internal void LetsGo()
         {
             EngineService?.Process();
         }

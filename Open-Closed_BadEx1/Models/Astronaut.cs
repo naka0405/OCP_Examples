@@ -4,7 +4,7 @@
     {
         public string Name { get; }
 
-        public int Age { get; }
+        int age { get; }
 
         string role { get; }
 
@@ -25,7 +25,7 @@
         public Astronaut(string name, int age, string role)
         {
             Name = name;
-            Age = age;
+            this.age = age;
             this.role = role;
         }
     }

@@ -1,15 +1,17 @@
-﻿using Open_Closed_Examples.Interfaces;
-
-namespace Open_Closed_Examples.Models.Communication
+﻿namespace Open_Closed_Examples.Models.Communication
 {
-    internal class CommunicationBlock
+    internal class CommunicationBlock : System
     {
         private readonly SmartSpaceCommunicationService smartSpaceCommunication;
         private readonly RadioCommunicationService radioCommunication;
 
-        private readonly IList<object> receivedMessages;        
+        private readonly IList<object> receivedMessages;
 
-        public CommunicationBlock()
+        public override string Name => nameof(CommunicationBlock);
+
+        protected override double FuelConsumptionPerHour => 15;
+
+        public CommunicationBlock(DateTime startDateTime) : base(startDateTime)
         {
             smartSpaceCommunication = new SmartSpaceCommunicationService();
             radioCommunication = new RadioCommunicationService();

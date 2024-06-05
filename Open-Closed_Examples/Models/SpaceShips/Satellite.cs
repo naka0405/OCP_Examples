@@ -14,6 +14,11 @@ namespace Open_Closed_Examples.Models.SpaceShips
 
         public string Description => description;
 
+        public void Run()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string ToString()
         {
             return $"I am {nameof(Satellite)} - \'{Identifier}\'.";

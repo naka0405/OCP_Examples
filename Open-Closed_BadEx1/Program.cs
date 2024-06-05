@@ -10,7 +10,7 @@ namespace Open_Closed_BadEx1
             Console.WriteLine("Start");
             var rocket = new Rocket("OCP_Rocket");
 
-            var crew = new Crew("OCP_Team");
+            var crew = new Crew();
 
             var engineer = new Astronaut("NK", 38, "engineer");
             var aircraftMechanic = new Astronaut("James Arnb", 35, "Aircraft Mechanic");

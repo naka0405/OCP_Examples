@@ -7,7 +7,7 @@ namespace Open_Closed_Examples.Models.Roles
         public abstract string Description { get; }
         public abstract string GetRole();
 
-        public IRoleManager? Manager { get; }
+        IRoleManager? manager { get; }
 
         public TeamRole()
         {
@@ -15,7 +15,7 @@ namespace Open_Closed_Examples.Models.Roles
 
         public TeamRole(IRoleManager manager)
         {
-            Manager = manager;
+            this.manager = manager;
         }
     }
 }

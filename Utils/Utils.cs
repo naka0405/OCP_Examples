@@ -2,6 +2,8 @@
 {
     public static class Utils
     {
+        static readonly Random rnd = new Random();
+
         public static void SetSeparator(string? partName = null)
         {
             var stringSeparator = new string('-', 24);
@@ -9,9 +11,7 @@
         }
 
         public static bool GetBoolRandomValue()
-        {
-            Random rnd = new Random();
-
+        {  
             return rnd.Next(2) == 0;
         }
 
@@ -24,6 +24,11 @@
                 numbers.Add(int.Parse(s));
             }
             return numbers;
+        }
+
+        public static double GetRandomDouble()
+        {
+            return rnd.NextDouble();
         }
     }
 }
