@@ -3,6 +3,6 @@ namespace Open_Closed_Examples.Interfaces
 {
     public interface IAstronaut
     {
-        TeamRole Role { get; }
+        string GetRole();
     }
 }

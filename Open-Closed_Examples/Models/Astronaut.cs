@@ -3,19 +3,20 @@ using Open_Closed_Examples.Models.Roles;
 
 namespace Open_Closed_Examples.Models
 {
-    public class Astronaut : IPerson, IAstronaut
+    public class Astronaut : IAstronaut
     {
-        public string Name { get; set; }
+        private readonly TeamRole role;
+        public Person Person { get; set; }
 
-        public int Age { get; set; }
-
-        public TeamRole Role { get; set; }
-
-        public Astronaut(string name, int age, TeamRole role)
+        public Astronaut(Person person, TeamRole role)
         {
-            Name = name;
-            Age = age;
-            Role = role;
+            Person = person;
+            this.role = role;
+        }
+
+        public string GetRole()
+        {
+            return role.GetRole();
         }
     }
 }

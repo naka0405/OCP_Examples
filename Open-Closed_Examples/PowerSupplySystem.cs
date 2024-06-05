@@ -14,5 +14,15 @@ namespace Open_Closed_Examples
         {
                 
         }
+
+        public object GetDefinedParameters()
+        {
+            throw new NotImplementedException();
+        }
+
+        public object GetDefinedParameters(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

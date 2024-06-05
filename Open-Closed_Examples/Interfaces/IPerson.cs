@@ -3,6 +3,7 @@
     public interface IPerson
     {
         string Name { get; }
-        public int Age { get; }
+
+        string GetPersonData();
     }
 }

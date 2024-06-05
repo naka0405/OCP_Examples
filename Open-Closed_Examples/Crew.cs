@@ -12,7 +12,7 @@
         {
             foreach (var member in TeamMembers)
             {
-                Console.WriteLine($"{member.Name} is {member.Role.GetRole()}");
+                Console.WriteLine($"{member.Person.Name} is {member.GetRole()}");
             }
         }
     }
